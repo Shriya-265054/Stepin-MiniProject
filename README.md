@@ -1,6 +1,6 @@
 # Stepin-MiniProject
 
-# BANK MANAGEMENT SYSTEM
+# Bank Management System
 
 # SDLC Activity Based Learning
 
