@@ -68,8 +68,7 @@ int main()
             printf("Enter you birth date: \n");
             scanf("%d %d %d",&day,&month,&year);
             acc=(*fp1)(acc,name,cust_id,age,address,citizenship,phone,balance,acc_type,amt,month,day,year);
-           
-
+            printf("****ACCOUNT CREATED****");
         }
 
         if (option == 2)
