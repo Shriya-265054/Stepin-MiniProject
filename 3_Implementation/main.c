@@ -78,19 +78,19 @@ int main()
             printf("Enter account number: \n");
             scanf("%d",&cust_id);
             printf("Enter your name: \n");
-            scanf("%s",name);
+            scanf("%50s",name);
             printf("Enter your age: \n");
             scanf("%d",&age);
             printf("Enter your permanent address: \n");
-            scanf("%s",address);
+            scanf("%60s",address);
             printf("Enter your citizenship: \n");
-            scanf("%s",citizenship);
+            scanf("%10s",citizenship);
             printf("Phone Number: \n");
             scanf("%d",&phone);
             printf("Enter the balance you want to keep in the account: \n");
             scanf("%f",&balance);
             printf("Account type: \n");
-            scanf("%s",acc_type);
+            scanf("%10s",acc_type);
             printf("Enter you birth date: \n");
             scanf("%d %d %d",&day,&month,&year);
 
