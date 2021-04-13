@@ -108,7 +108,7 @@ int main()
                 printf("Account found with Acc no. %d \n:",temp.acc_no);
                 int op;
                 printf("Choose the option you want to update:\n");
-                printf("!: Update name: \n");
+                printf("1: Update name: \n");
                 printf("2: Update age: \n");
                 printf("3: Update address: \n");
                 printf("4: Update phone number: \n");
@@ -120,7 +120,7 @@ int main()
                             break;
                     case 2: scanf("%d",&age);
                             break;
-                    case 3: scanf("%50s",address);
+                    case 3: scanf("%60s",address);
                             break;
                     case 4: scanf("%d",&phone);
                             break;
