@@ -11,7 +11,6 @@ int main()
     
     info *acc = NULL;
     info i;
-    long int length = sizeof(info);
     info temp = {0};
     int see;
     int option;
