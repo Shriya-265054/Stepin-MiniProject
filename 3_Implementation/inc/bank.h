@@ -6,12 +6,9 @@
 #include<malloc.h>
 
 typedef enum user{
-    ERROR_NULL_PTR = -2,
     SUCCESS = 0,
     ACC_EXISTS=1,
     NO_ACC_EXIST=2,
-    DATE_INCORRECT=3,
-    INVALID_NAME=4,
     EXISTS=5
 }user;
 
