@@ -27,3 +27,14 @@ It is made using Visual Studio Code IDE on Windows 10.
 ## How:
 A simple project which has multi-files in it and the program is made using structures and functions in C Programming Language.
 
+# Detail requirements
+## High Level Requirements: 
+| ID | Description | Category | Status | 
+| ----- | ----- | ------- | ---------|
+| HR01 | Customer can create new account | Techincal | IMPLEMENTED | 
+| HR02 | Account holder should be able add his/her required infomation | Techincal |  IMPLEMENTED  |
+| HR03 | Account holder should be able to update his personal information | Techincal |  IMPLEMENTED  |
+| HR04 | Account holder should be able to search and view his/her details | Techincal |  IMPLEMENTED  |
+| HR05 | Account holder should be able to deposit money | Techincal |  IMPLEMENTED  |
+| HR06 | Account holder should be able to withdraw money | Techincal |  IMPLEMENTED  |
+| HR07 | Account holder should be able to view current balance | Technical | IMPLEMENTED |
