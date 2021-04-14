@@ -49,10 +49,10 @@ A simple project which has multi-files in it and the program is made using struc
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-| LR01 | 1. New account shall be added by providing all the required information.                                                                                                          2. Account number should be unique and validated else account holder's record should not be provided. | HR01 |  IMPLEMENTED  |
-| LR02 | Adding account holder's data should be possible in 2 ways (1). first being by searching by account number of a account holder (2). By accepting all the records provided | HR02 |  IMPLEMENTED |
-| LR03 | Account holder can update the specific information first by searching account number, if acccount not found then "No Record Found" message should get displayed. | HR03 |  IMPLEMENTED  |
-| LR04 | If account holder wants to search his/her data it can be with the help of account number and if not found "Account not found" messages should get displayed. | HR04 |  IMPLEMENTED  |
+| LR01 | (1) New account shall be added by providing all the required information.                                                                                                        (2) Account number should be unique and validated else account holder's record should not be provided. | HR01 |  IMPLEMENTED  |
+| LR02 | Adding account holder's data should be possible in 2 ways (1) First being by searching by account number of a account holder (2) By accepting all the records provided | HR02 |  IMPLEMENTED |
+| LR03 | Account holder can update the specific information (1) By searching account number, if acccount not found then "No Record Found" message should get displayed. (2) Updating the required data. | HR03 |  IMPLEMENTED  |
+| LR04 | If account holder wants to search his/her data it can be able with the help of account number and if not found "Account not found" messages should get displayed. | HR04 |  IMPLEMENTED  |
 | LR05 | Account holder should be able to deposit money by providing the amount to be deposited and by checking if account exists. | HR05 |  IMPLEMENTED  |
 | LR06 | Account holder should be able to withdraw money by providing the amount to be withdrawn by checking if account exists. | HR06 |  IMPLEMENTED  |
 | LR07 | Account holder should be able to view specific details.  | HR07 |  IMPLEMENTED  |
