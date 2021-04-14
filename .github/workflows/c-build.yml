@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: C/C++ CI-Build Status
 
 on:
   push:
@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      
+    - uses: actions/checkout@v2     
     - name: make all
-      run:  make all -C 3_Implementation/all
+      run:  make -C 3_Implementation/ all
