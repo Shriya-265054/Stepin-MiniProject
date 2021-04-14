@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4076249686">
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="3615942478869641039">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" line="27" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="13455385987890399987">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" line="45" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="5057130270196243619">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" line="51" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="17531553855589796719">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\src\update.c" line="63" column="17"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="update" lineNumber="3"/>
+    <functioncall functionName="acc"/>
+    <functioncall functionName="acc_no"/>
+    <functioncall functionName="acc_type"/>
+    <functioncall functionName="address"/>
+    <functioncall functionName="age"/>
+    <functioncall functionName="amt"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="citizenship"/>
+    <functioncall functionName="cust_name"/>
+    <functioncall functionName="day"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="month"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nt"/>
+    <functioncall functionName="phone"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="strcpy"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="year"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.3"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;see==1&amp;#039; is always false" verbose="Condition &amp;#039;see==1&amp;#039; is always false" cwe="570" hash="9809550166766901625" sinceDate="4/14/2021">
+            <location file="main.c" line="169" info="Condition &amp;#039;see==1&amp;#039; is always false"/>
+            <location file="main.c" line="146" info="Assuming condition &amp;#039;see==1&amp;#039; is false"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;see==1&amp;#039; is always false" verbose="Condition &amp;#039;see==1&amp;#039; is always false" cwe="570" hash="902723423370534969" sinceDate="4/14/2021">
+            <location file="main.c" line="184" info="Condition &amp;#039;see==1&amp;#039; is always false"/>
+            <location file="main.c" line="146" info="Assuming condition &amp;#039;see==1&amp;#039; is false"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;id&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;id&amp;#039; shadows outer variable" cwe="398" hash="6138014579801890597" sinceDate="4/14/2021">
+            <location file="main.c" line="130" info="Shadow variable"/>
+            <location file="main.c" line="100" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;id&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;id&amp;#039; shadows outer variable" cwe="398" hash="9666502812841300151" sinceDate="4/14/2021">
+            <location file="main.c" line="173" info="Shadow variable"/>
+            <location file="main.c" line="168" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;id&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;id&amp;#039; shadows outer variable" cwe="398" hash="15216129556599578300" sinceDate="4/14/2021">
+            <location file="main.c" line="188" info="Shadow variable"/>
+            <location file="main.c" line="183" info="Shadowed declaration"/>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: cbal" verbose="Unused variable: cbal" cwe="563" hash="5020535471249070071" sinceDate="4/14/2021">
+            <location file="main.c" line="14"/>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: balance" verbose="Unused variable: balance" cwe="563" hash="7003561024522807509" sinceDate="4/14/2021">
+            <location file="main.c" line="39"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.&#10;&#10;Sample program that can crash:&#10;&#10;#include &amp;lt;stdio.h&amp;gt;&#10;int main()&#10;{&#10;    char c[5];&#10;    scanf(&amp;quot;%s&amp;quot;, c);&#10;    return 0;&#10;}&#10;&#10;Typing in 5 or more characters may make the program crash. The correct usage here is &amp;#039;scanf(&amp;quot;%4s&amp;quot;, c);&amp;#039;, as the maximum field width does not include the terminating null byte.&#10;Source: http://linux.die.net/man/3/scanf&#10;Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="3615942478869641039" sinceDate="4/14/2021">
+            <location file0="src/update.c" file="src\update.c" line="27"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.&#10;&#10;Sample program that can crash:&#10;&#10;#include &amp;lt;stdio.h&amp;gt;&#10;int main()&#10;{&#10;    char c[5];&#10;    scanf(&amp;quot;%s&amp;quot;, c);&#10;    return 0;&#10;}&#10;&#10;Typing in 5 or more characters may make the program crash. The correct usage here is &amp;#039;scanf(&amp;quot;%4s&amp;quot;, c);&amp;#039;, as the maximum field width does not include the terminating null byte.&#10;Source: http://linux.die.net/man/3/scanf&#10;Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="13455385987890399987" sinceDate="4/14/2021">
+            <location file0="src/update.c" file="src\update.c" line="45"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.&#10;&#10;Sample program that can crash:&#10;&#10;#include &amp;lt;stdio.h&amp;gt;&#10;int main()&#10;{&#10;    char c[5];&#10;    scanf(&amp;quot;%s&amp;quot;, c);&#10;    return 0;&#10;}&#10;&#10;Typing in 5 or more characters may make the program crash. The correct usage here is &amp;#039;scanf(&amp;quot;%4s&amp;quot;, c);&amp;#039;, as the maximum field width does not include the terminating null byte.&#10;Source: http://linux.die.net/man/3/scanf&#10;Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="5057130270196243619" sinceDate="4/14/2021">
+            <location file0="src/update.c" file="src\update.c" line="51"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.&#10;&#10;Sample program that can crash:&#10;&#10;#include &amp;lt;stdio.h&amp;gt;&#10;int main()&#10;{&#10;    char c[5];&#10;    scanf(&amp;quot;%s&amp;quot;, c);&#10;    return 0;&#10;}&#10;&#10;Typing in 5 or more characters may make the program crash. The correct usage here is &amp;#039;scanf(&amp;quot;%4s&amp;quot;, c);&amp;#039;, as the maximum field width does not include the terminating null byte.&#10;Source: http://linux.die.net/man/3/scanf&#10;Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" hash="17531553855589796719" sinceDate="4/14/2021">
+            <location file0="src/update.c" file="src\update.c" line="63"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;nibble&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;nibble&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="14464778109042415874" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="277"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;i&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;i&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="17585234455273576050" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="1350"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;i&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;i&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="1800596817485321328" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="1390"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;bytes&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;bytes&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="2269248172779500585" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="1514"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;i&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;i&amp;#039; is assigned a value that is never used." cwe="563" hash="16355757081300471623" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="1431"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1833"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1843"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="559"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1833"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1843"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="559"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1833"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1843"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="559"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_START&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1833"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_EXEC_TIME_STOP&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1843"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_PRINT_EXEC_TIME&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="559"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &amp;#039;pch!=NULL&amp;#039; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &amp;#039;pch!=NULL&amp;#039; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" hash="3785795216845326385" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="1731" info="Null pointer addition"/>
+            <location file0="unity/unity.c" file="unity\unity.c" line="1642" info="Assuming that condition &amp;#039;pch!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="85"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="90"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="91"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="96"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="97"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="102"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="103"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="163"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="168"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="169"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="174"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="175"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="180"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="181"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="197"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="200"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="205"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="206"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="211"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="212"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="217"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="218"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="221"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="234"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="235"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="248"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="269"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="291"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="295"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="312"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="316"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="321"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="353"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="455"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="456"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="462"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="466"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="471"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="482"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="522"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="524"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="526"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="537"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="560"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="597"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="599"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="608"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="610"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="626"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="628"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="637"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="639"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1766"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1786"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1803"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1804"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1817"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1818"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1821"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1873"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1875"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1882"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1894"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="85"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="90"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="91"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="96"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="97"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="102"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="103"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="163"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="168"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="169"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="174"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="175"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="180"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="181"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="197"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="200"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="205"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="206"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="211"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="212"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="217"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="218"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="221"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="234"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="235"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="248"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="269"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="291"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="295"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="312"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="316"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="321"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="353"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="455"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="456"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="462"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="466"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="471"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="482"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="522"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="524"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="526"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="537"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="560"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="597"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="599"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="608"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="610"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="626"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="628"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="637"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="639"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1766"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1786"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1803"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1804"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1817"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1818"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1821"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1873"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1875"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1882"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1894"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="561"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="702"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="723"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="763"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="791"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="801"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="857"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="920"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="930"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="942"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="967"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1031"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1220"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1242"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1252"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1333"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1379"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1419"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1441"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1451"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1497"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1520"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1530"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1554"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1791"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1807"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1895"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="561"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="702"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="723"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="763"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="791"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="801"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="857"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="920"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="930"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="942"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="967"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1031"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1220"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1242"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1252"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1333"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1379"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1419"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1441"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1451"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1497"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1520"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1530"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1554"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1791"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1807"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1895"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; since the value of &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; since the value of &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="572"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; since the value of &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; since the value of &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1769"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;retval&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;retval&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="14081438623502934531" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="2023"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;ptrf&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;ptrf&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="2202377448369704123" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="2026"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;lnext&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;lnext&amp;#039; is assigned a value that is never used." cwe="563" hash="1800337575224170801" sinceDate="4/14/2021">
+            <location file0="unity/unity.c" file="unity\unity.c" line="1980"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertBits&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertBits&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="686"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertDoubleSpecial&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertDoubleSpecial&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1112"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertDoublesWithin&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertDoublesWithin&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1094"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualDoubleArray&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualDoubleArray&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1046"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualFloatArray&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualFloatArray&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="905"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualIntArray&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualIntArray&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="775"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualMemory&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualMemory&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1503"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualNumber&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualNumber&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="707"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualString&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualString&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1345"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualStringArray&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualStringArray&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1424"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertEqualStringLen&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertEqualStringLen&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1384"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertFloatSpecial&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertFloatSpecial&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="972"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertFloatsWithin&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertFloatsWithin&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="953"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertGreaterOrLessOrEqualNumber&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertGreaterOrLessOrEqualNumber&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="728"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertNumbersArrayWithin&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertNumbersArrayWithin&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1225"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityAssertNumbersWithin&amp;#039; is never used." verbose="The function &amp;#039;UnityAssertNumbersWithin&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1178"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityBegin&amp;#039; is never used." verbose="The function &amp;#039;UnityBegin&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1855"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityDefaultTestRun&amp;#039; is never used." verbose="The function &amp;#039;UnityDefaultTestRun&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1827"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityDoubleToPtr&amp;#039; is never used." verbose="The function &amp;#039;UnityDoubleToPtr&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1619"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityEnd&amp;#039; is never used." verbose="The function &amp;#039;UnityEnd&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1871"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityFail&amp;#039; is never used." verbose="The function &amp;#039;UnityFail&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1758"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityFloatToPtr&amp;#039; is never used." verbose="The function &amp;#039;UnityFloatToPtr&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1610"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityIgnore&amp;#039; is never used." verbose="The function &amp;#039;UnityIgnore&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1795"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityMessage&amp;#039; is never used." verbose="The function &amp;#039;UnityMessage&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1811"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityNumToPtr&amp;#039; is never used." verbose="The function &amp;#039;UnityNumToPtr&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1584"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityParseOptions&amp;#039; is never used." verbose="The function &amp;#039;UnityParseOptions&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1910"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityPrintF&amp;#039; is never used." verbose="The function &amp;#039;UnityPrintF&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1736"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnitySetTestFile&amp;#039; is never used." verbose="The function &amp;#039;UnitySetTestFile&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="1849"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UnityTestMatches&amp;#039; is never used." verbose="The function &amp;#039;UnityTestMatches&amp;#039; is never used." cwe="561" sinceDate="4/14/2021">
+            <location file="unity\unity.c" line="2084"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="471"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="472"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="471"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="472"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="471"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="472"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="471"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&amp;#039; since the value of &amp;#039;UNITY_TIME_TYPE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="472"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_CHAR;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_CHAR_HEADER_DECLARATION&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="268"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_OUTPUT_FLUSH;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; since the value of &amp;#039;UNITY_OUTPUT_FLUSH_HEADER_DECLARATION&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="284"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; since the value of &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; since the value of &amp;#039;UNITY_PRINT_TEST_CONTEXT&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="4/14/2021">
+            <location file="unity\unity_internals.h" line="519"/>
+        </error>
+    </errors>
+</results>

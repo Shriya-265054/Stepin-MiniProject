@@ -19,7 +19,6 @@ typedef struct info{
     char address[60];
     char citizenship[15];
     int phone;
-    float balance;
     char acc_type[10];
     float amt;
     int month;
@@ -29,17 +28,17 @@ typedef struct info{
 }info;
 
 
-info *newacc(info *,char *,int,int,char *,char *,int,float,char *,float,int,int,int);
+info *newacc(info *,char *,int,int,char *,char *,int,char *,float,int,int,int);
 
-user add(info *,char *,int ,int ,char *,char *,int ,float,char *,float ,int ,int ,int );
+user add(info *,char *,int ,int ,char *,char *,int ,char *,float ,int ,int ,int );
 
 user update(info *,int,int,int);
 
-user deposit(info *,float,int,info *,int *);
+user deposit(float,info *,info *,int *);
 
 user search(info *, int , info *, int *);
 
-user withdraw(info *,int , info *, float ,int *);
+user withdraw(info *,info *,int *);
 
 user display(info *);
 

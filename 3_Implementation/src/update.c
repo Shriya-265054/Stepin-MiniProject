@@ -59,37 +59,32 @@ user update(info *acc,int cust_id,int check,int get)
             }
             if(get == 7)
             {
-                float balance;
-                scanf("%.2f",&balance);
-                p->balance=balance;
-            }
-            if(get == 8)
-            {
                 char acc_type[100];
                 scanf("%s",acc_type);
                strcpy(p->acc_type,acc_type);
             }
-            if(get == 9)
+            if(get == 8)
             {
                 float amt;
                 scanf("%.2f",&amt);
                 p->amt=amt;
             }
+            if(get == 9)
             {
                 int month;
                 scanf("%d",&month);
                 p->month=month;
-            }
-            {
-                int day;
+
+                 int day;
                 scanf("%d",&day);
                 p->day=day;
-            }
-            {
-                int year;
+
+                 int year;
                 scanf("%d",&year);
                 p->year=year;
             }
+            
+           
         }
     }
 }

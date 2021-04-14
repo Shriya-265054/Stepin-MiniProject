@@ -1,14 +1,17 @@
 #include"bank.h"
 
-user deposit(info *acc,float amt,int cust_id, info *temp,int *see)
+user deposit(float amt,info *acc,info *temp,int *see)
 {
-    int i=search(acc,cust_id,temp,see);
-    if(i == -1)
+    //static float balance;
+    int i=search(acc,i,temp,see);
+    if (i == -1)
     {
         return SUCCESS;
     }
     else
     {
-        (acc+i)->balance += amt;
+        acc->amt+=temp->amt;
+        printf("Balance: %.2f\n",acc->amt);
+       
     }
 }

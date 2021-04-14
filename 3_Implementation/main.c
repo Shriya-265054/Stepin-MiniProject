@@ -1,16 +1,17 @@
 #include"bank.h"
-info *(* fp1)(info *,char *,int,int,char *,char *,int,float,char *,float,int,int,int)=newacc;
-user (*fp2)(info *,char *,int ,int ,char *,char *,int ,float,char *,float ,int ,int ,int )=add;
+info *(* fp1)(info *,char *,int,int,char *,char *,int,char *,float,int,int,int)=newacc;
+user (*fp2)(info *,char *,int ,int ,char *,char *,int ,char *,float ,int ,int ,int )=add;
 user (*fp3)(info *,int,int,int)=update;
-user (*fp4)(info *,float,int,info *,int *)=deposit;
+user (*fp4)(float,info *,info *,int *)=deposit;
 user (*fp5)(info *, int , info *, int *)=search;
-user (*fp6)(info *,int , info *, float ,int *)=withdraw;
+user (*fp6)(info *,info *,int *)=withdraw;
 user (*fp7)(info *)=display;
 int main()
 {
     
     info *acc = NULL;
-    info i;
+    //info *temp = NULL;
+    info *cbal;
     info temp = {0};
     int see;
     int option;
@@ -29,12 +30,6 @@ int main()
     scanf("%d",&option);
     switch (option)
     {
-        if(option == 0)
-       {
-            break;
-       }
-       if (option >=1 && option <=7)
-       {
             char name[60];
             int cust_id;
             int age;
@@ -63,13 +58,13 @@ int main()
             printf("Phone Number: \n");
             scanf("%d",&phone);
             printf("Enter the balance you want to keep in the account: \n");
-            scanf("%f",&balance);
+            scanf("%f",&amt);
             printf("Account type: \n");
             scanf("%10s",acc_type);
             printf("Enter you birth date: \n");
-            scanf("%d - %d - %d",&day,&month,&year);
+            scanf("%d-%d-%d",&day,&month,&year);
             printf("****ACCOUNT CREATED****\n\n");
-            acc=(*fp1)(acc,name,cust_id,age,address,citizenship,phone,balance,acc_type,amt,month,day,year);
+            acc=(*fp1)(acc,name,cust_id,age,address,citizenship,phone,acc_type,amt,month,day,year);
             break;
         }
 
@@ -88,13 +83,13 @@ int main()
             printf("Phone Number: \n");
             scanf("%d",&phone);
             printf("Enter the balance you want to keep in the account: \n");
-            scanf("%f",&balance);
+            scanf("%f",&amt);
             printf("Account type: \n");
             scanf("%10s",acc_type);
             printf("Enter you birth date: \n");
             scanf("%d %d %d",&day,&month,&year);
 
-            user id = (*fp2)(acc,name,cust_id,age,address,citizenship,phone,balance,acc_type,amt,month,day,year);
+            user id = (*fp2)(acc,name,cust_id,age,address,citizenship,phone,acc_type,amt,month,day,year);
             break;
         }
         case 3:
@@ -102,10 +97,10 @@ int main()
             printf("Enter account number: \n");
             scanf("%d",&cust_id);
 
-            user id = (*fp5)(acc,cust_id,acc,&see);
+            user id = (*fp5)(acc,cust_id,&temp,&see);
             if(see==1)
             {
-                printf("Account found with Acc no. %d \n:",temp.acc_no);
+                printf("Account found with Acc no. %d \n:",acc->acc_no);
                 int op;
                 printf("Choose the option you want to update:\n");
                 printf("1: Update name: \n");
@@ -116,15 +111,20 @@ int main()
                 scanf("%d",&op);
                 switch (op)
                 {
-                    case 1: scanf("%50s",name);
+                    case 1: printf("Insert desired name:\n");
+                            scanf("%50s",name);
                             break;
-                    case 2: scanf("%d",&age);
+                    case 2: printf("Insert desired age:\n");
+                            scanf("%d",&age);
                             break;
-                    case 3: scanf("%60s",address);
+                    case 3: printf("Insert expected address:\n");
+                            scanf("%60s",address);
                             break;
-                    case 4: scanf("%d",&phone);
+                    case 4: printf("Insert phone number:\n");
+                            scanf("%d",&phone);
                             break;
-                    case 5:scanf("%d-%d-%d",&day,&month,&year);
+                    case 5: printf("Insert birth date:\n");
+                            scanf("%d-%d-%d",&day,&month,&year);
                             break;
                 }
                 user id = (*fp3)(acc,cust_id,op,0);
@@ -140,14 +140,14 @@ int main()
         case 4:
         {
              printf("Enter account number: \n");
-            scanf("%d,&cust_id");
+            scanf("%d",&cust_id);
 
-            user id = (*fp5)(acc,cust_id,acc,&see);
+            user id = (*fp5)(acc,cust_id,&temp,&see);
             if(see==1)
             {
                 printf("Name: %s\n",temp.name);
                 printf("Age: %d\n",temp.age);
-                printf("Balance: %d\n",temp.balance);
+                printf("Balance: %f\n",temp.amt);
                 printf("Address: %s\n",temp.address);
                 printf("Citizenship: %s\n",temp.citizenship);
                 printf("Phone number: %d\n",temp.phone);
@@ -163,46 +163,44 @@ int main()
         case 5:
         {
             printf("Enter account number: \n");
-            scanf("%d,&cust_id");
+            scanf("%d",&cust_id);
 
-            user id = (*fp5)(acc,cust_id,acc,&see);
+            user id = (*fp5)(acc,cust_id,&temp,&see);
             if(see==1)
             {
                 printf("Enter the ammount you want to deposit:\n");
-                scanf("%f",amt);
-                user id = (*fp4)(acc,amt,cust_id,acc,&see);
-                printf("Balance: %.2f\n",temp.balance);
+                scanf("%f",acc->amt);
+                user id = (*fp4)(amt,acc,&temp,&see);
+                //printf("Balance: %.2f\n",acc->amt);
                 break;
             }
         }
         case 6:
         {
             printf("Enter account number: \n");
-            scanf("%d,&cust_id");
+            scanf("%d",&cust_id);
 
-            user id = (*fp5)(acc,cust_id,acc,&see);
+            user id = (*fp5)(acc,cust_id,&temp,&see);
             if(see==1)
             {
                 printf("Enter the ammount you want to deposit:\n");
-                scanf("%f",amt);
-                user id = (*fp6)(acc,cust_id,acc,amt,&see);
-                printf("Balance: %.2f\n",temp.balance);
+                scanf("%f",acc->amt);
+                user id = (*fp6)(acc,acc,&see);
+                //printf("Balance: %f\n",acc->amt);
                 break;
             }
         }
         case 7:
         {
-            printf("%d",acc->acc_no);
+            //printf("%d",acc->acc_no);
             (*fp7)(acc);
             break;
         }
         default:printf("Invalid option.\n");
+                return 0;
+                break;
     }
-    }
-    
-   
-}
-
+  }  
 }
 
 

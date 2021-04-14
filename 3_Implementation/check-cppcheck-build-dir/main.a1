@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2817272372">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;see==1&apos; is always false" verbose="Condition &apos;see==1&apos; is always false" cwe="570" hash="9809550166766901625">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="169" column="19" info="Condition &apos;see==1&apos; is always false"/>
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="146" column="19" info="Assuming condition &apos;see==1&apos; is false"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;see==1&apos; is always false" verbose="Condition &apos;see==1&apos; is always false" cwe="570" hash="902723423370534969">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="184" column="19" info="Condition &apos;see==1&apos; is always false"/>
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="146" column="19" info="Assuming condition &apos;see==1&apos; is false"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;id&apos; shadows outer variable" verbose="Local variable &apos;id&apos; shadows outer variable" cwe="398" hash="6138014579801890597">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="130" column="22" info="Shadow variable"/>
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="100" column="18" info="Shadowed declaration"/>
+            <symbol>id</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;id&apos; shadows outer variable" verbose="Local variable &apos;id&apos; shadows outer variable" cwe="398" hash="9666502812841300151">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="173" column="22" info="Shadow variable"/>
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="168" column="18" info="Shadowed declaration"/>
+            <symbol>id</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;id&apos; shadows outer variable" verbose="Local variable &apos;id&apos; shadows outer variable" cwe="398" hash="15216129556599578300">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="188" column="22" info="Shadow variable"/>
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="183" column="18" info="Shadowed declaration"/>
+            <symbol>id</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: cbal" verbose="Unused variable: cbal" cwe="563" hash="5020535471249070071">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="14" column="11"/>
+            <symbol>cbal</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: balance" verbose="Unused variable: balance" cwe="563" hash="7003561024522807509">
+            <location file0="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" file="F:\Git project\miniproject\Stepin-MiniProject-1\3_Implementation\main.c" line="39" column="19"/>
+            <symbol>balance</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="9"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="acc"/>
+    <functioncall functionName="acc_no"/>
+    <functioncall functionName="acc_type"/>
+    <functioncall functionName="add"/>
+    <functioncall functionName="address"/>
+    <functioncall functionName="age"/>
+    <functioncall functionName="amt"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="citizenship"/>
+    <functioncall functionName="cust_id"/>
+    <functioncall functionName="day"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="deposit"/>
+    <functioncall functionName="display"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="month"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="newacc"/>
+    <functioncall functionName="op"/>
+    <functioncall functionName="option"/>
+    <functioncall functionName="phone"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="search"/>
+    <functioncall functionName="see"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="temp"/>
+    <functioncall functionName="update"/>
+    <functioncall functionName="user"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="withdraw"/>
+    <functioncall functionName="year"/>
+  </FileInfo>
+</analyzerinfo>

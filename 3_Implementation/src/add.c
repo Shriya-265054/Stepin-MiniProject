@@ -1,6 +1,6 @@
 #include"bank.h"
 
-user add(info *acc,char *name,int cust_id, int age,char *address,char *citizenship,int phone,float balance,char *acc_type,float amt,int month,int day,int year)
+user add(info *acc,char *name,int cust_id, int age,char *address,char *citizenship,int phone,char *acc_type,float amt,int month,int day,int year)
 {
     info *new_acc, *p;
     new_acc = (info *)malloc (sizeof(info));

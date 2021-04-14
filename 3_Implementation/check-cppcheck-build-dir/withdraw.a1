@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1169572803">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="withdraw" lineNumber="3"/>
+    <functioncall functionName="acc"/>
+    <functioncall functionName="amt"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="search"/>
+    <functioncall functionName="see"/>
+    <functioncall functionName="temp"/>
+  </FileInfo>
+</analyzerinfo>

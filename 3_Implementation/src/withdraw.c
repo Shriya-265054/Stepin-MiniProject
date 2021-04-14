@@ -1,18 +1,14 @@
 #include"bank.h"
 
-user withdraw(info *acc,int cust_id, info *temp, float amt,int *see)
+user withdraw(info *acc,info *temp,int *see)
 {
-    int i=search (acc,cust_id,temp,see);
+    int i=search (acc,i,temp,see);
     if(i==-1)
     {
         return SUCCESS;
     }
-    else if((acc+i)->balance < amt)
-    {
-        printf("Insufficient balance");
-    }
     else
     {
-        (acc+i)->balance -= amt;
+        printf("Balance: %.2f",(temp->amt - acc->amt));
     }
 }

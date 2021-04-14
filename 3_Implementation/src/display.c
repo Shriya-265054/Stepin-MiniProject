@@ -15,7 +15,7 @@ user display(info *acc)
         {
             printf("Account No: %d\n",p->acc_no);
             printf("Name: %s\n",p->name);
-            printf("Balance: %d.2f\n",p->balance); 
+            printf("Balance: %.2f\n",p->amt); 
             printf("***********\n");
             p=p->nt;
         }
