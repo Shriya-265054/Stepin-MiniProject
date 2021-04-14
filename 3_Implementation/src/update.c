@@ -24,7 +24,7 @@ user update(info *acc,int cust_id,int check,int get)
         {
             if(get == 1){
                 char cust_name[100];
-                scanf("%s",cust_name);
+                scanf("%50s",cust_name);
                 strcpy(p->name,cust_name);
             }
             if(get == 2)
@@ -42,13 +42,13 @@ user update(info *acc,int cust_id,int check,int get)
             if(get == 4)
             {
                 char address[100];
-                scanf("%s",address);
+                scanf("%60s",address);
                strcpy(p->address,address);
             }
             if(get == 5)
             {
                 char citizenship[100];
-                scanf("%s",citizenship);
+                scanf("%10s",citizenship);
                strcpy(p->citizenship,citizenship);
             }
             if(get == 6)
@@ -60,7 +60,7 @@ user update(info *acc,int cust_id,int check,int get)
             if(get == 7)
             {
                 char acc_type[100];
-                scanf("%s",acc_type);
+                scanf("%10s",acc_type);
                strcpy(p->acc_type,acc_type);
             }
             if(get == 8)
