@@ -7,5 +7,5 @@
 
 ## Low Level Design
 
-#State Diagram
-![Architecture](https://github.com/Shriya-265054/Stepin-MiniProject/blob/main/2_Design/LLD.PNG)
+###State Diagram
+![State diagram](https://github.com/Shriya-265054/Stepin-MiniProject/blob/main/2_Design/LLD.PNG)
