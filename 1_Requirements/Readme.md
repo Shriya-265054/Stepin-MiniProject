@@ -43,7 +43,7 @@ A simple project which has multi-files in it and the program is made using struc
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-| LR01 | 1. New account shall be added by providing all the required information                                                                                                          2. Account number should be unique and validated else account holder's record should not be provided. | HR01 |  IMPLEMENTED  |
+| LR01 | -1. New account shall be added by providing all the required information                                                                                                               -2. Account number should be unique and validated else account holder's record should not be provided. | HR01 |  IMPLEMENTED  |
 | LR02 | Adding account holder's data should be possible in 2 ways (1). first being by searching by account number of a account holder (2). By accepting all the records provided | HR02 |  IMPLEMENTED |
 | LR03 | While reading all the records, only 10 records per page should be visible and should add 10 more if user wants to see more | HR02 | FUTURE |
 | LR04 | If user searches for an invalid ID "No Record Found" message should be displayed | HR02 |  IMPLEMENTED  |
