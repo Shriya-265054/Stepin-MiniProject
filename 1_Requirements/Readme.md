@@ -2,6 +2,7 @@
 
 ## Introduction
 
+- Bank Management System is a application, the project focuses on customer's account services in a bank. This application has several services such as accepting information for record, to deposit and withdraw an amount, searching the information in the record, interests and displaying the balance on the screen also the data is secured using login credentials etc. This project is made using structures and functions in c programming language.
 - This work is taken from [http://www.cprogrammingnotes.com/question/banking-system.html](http://www.cprogrammingnotes.com/question/banking-system.html) and this is an improvement on it.
  - For this project, we require C Programming, makefile and Unit Testing using Unity.
  - Basic knowledge of structures and functions would be helpful to understand.

@@ -8,9 +8,7 @@ Visit [Pages for Report -optional](using github.io option)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
-[![C/C++ CI](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/c-build.yml/badge.svg)] |[![cppcheck-action](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml)
-[![CI-Coverage](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gcov.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gcov.yml)
-[![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml)| [![Unity - Unit Testing](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/gitinspector.yml)
+[![C/C++ CI](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/c-build.yml/badge.svg)] |[![cppcheck-action](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml) [![CI-Coverage](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gcov.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gcov.yml)[![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml)| [![Unity - Unit Testing](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml)|[![Contribution Check - Git Inspector](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml)
 
 
 ## Folder Structure
@@ -34,8 +32,14 @@ SF ID. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 3. ...
 4. ...
 
-## Learning Resources
-1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
-3. [git inspector](https://github.com/ejwa/gitinspector.git)
-4. [github workflow](https://docs.github.com/en/actions/learn-github-action)
+| Feature Id | Feature |
+| -----------|---------|
+|F_01| Create a bank account |
+|F_02| Add the information to account |
+|F_03| Update information in list  |
+|F_04| Searching the data with account number (if exixts) |
+|F_05| Desposit desired amount in the account |
+|F_06| Withdraw desired amount from the account |
+|F_07| Display the information using account number(if exists) |
+|F_08| Dynamic memory allocation and deallocation implemented |
+
