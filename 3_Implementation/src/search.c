@@ -10,6 +10,7 @@ user search(info *acc, int cust_id, info *temp, int *see)
     }
     else
     {
+        // printf("\n%d\n",cust_id);
         int flag=0;
         while(p!=NULL)
         {
@@ -20,6 +21,7 @@ user search(info *acc, int cust_id, info *temp, int *see)
             }
             p=p->nt;
         }
+        // printf("\n flag=%d\n",flag);
         if(flag==1)
         {
             *see=1;
@@ -34,6 +36,7 @@ user search(info *acc, int cust_id, info *temp, int *see)
             temp-> month=p->month;
             temp-> day=p->day;
             temp-> year=p->year;
+            printf("Available Account balance: %.2f\n",temp->amt);
         }
         else
         {

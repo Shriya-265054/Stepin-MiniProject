@@ -34,11 +34,11 @@ user add(info *,char *,int ,int ,char *,char *,int ,char *,float ,int ,int ,int 
 
 user update(info *,int,int,int);
 
-user deposit(info *,info *,int *);
+user deposit(float,info *,info *,int *);
 
 user search(info *, int , info *, int *);
 
-user withdraw(info *,info *,int *);
+user withdraw(info *,float,info *,int *);
 
 user display(info *);
 

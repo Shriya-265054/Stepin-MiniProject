@@ -1,10 +1,11 @@
 #include"bank.h"
+#include"bank.h"
 info *(* fp1)(info *,char *,int,int,char *,char *,int,char *,float,int,int,int)=newacc;
 user (*fp2)(info *,char *,int ,int ,char *,char *,int ,char *,float ,int ,int ,int )=add;
 user (*fp3)(info *,int,int,int)=update;
-user (*fp4)(info *,info *,int *)=deposit;
+user (*fp4)(float,info *,info *,int *)=deposit;
 user (*fp5)(info *, int , info *, int *)=search;
-user (*fp6)(info *,info *,int *)=withdraw;
+user (*fp6)(info *,float,info *,int *)=withdraw;
 user (*fp7)(info *)=display;
 int main()
 {
@@ -169,9 +170,9 @@ int main()
             if(see==1)
             {
                 printf("Enter the ammount you want to deposit:\n");
-                scanf("%f",acc->amt);
-                user id = (*fp4)(acc,&temp,&see);
-                printf("Balance: %.2f\n",acc->amt);
+                scanf("%f",&acc->amt);
+                user id = (*fp4)(amt,acc,&temp,&see);
+                //printf("Balance: %.2f\n",acc->amt);
                 break;
             }
         }
@@ -179,13 +180,14 @@ int main()
         {
             printf("Enter account number: \n");
             scanf("%d",&cust_id);
+            float withdrawalAmount;
 
             user id = (*fp5)(acc,cust_id,&temp,&see);
             if(see==1)
             {
-                printf("Enter the ammount you want to deposit:\n");
-                scanf("%f",acc->amt);
-                user id = (*fp6)(acc,acc,&see);
+                printf("Enter the ammount you want to withdraw:\n");
+                scanf("%f",&withdrawalAmount);
+                user id = (*fp6)(acc,withdrawalAmount,acc,&see);
                 //printf("Balance: %f\n",acc->amt);
                 break;
             }
@@ -202,7 +204,6 @@ int main()
     }
   }  
 }
-
 
 
 

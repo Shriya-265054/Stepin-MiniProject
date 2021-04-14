@@ -1,3 +1,5 @@
+#include "bank.h"
+
 #include"bank.h"
 
 user deposit(float amt,info *acc,info *temp,int *see)
