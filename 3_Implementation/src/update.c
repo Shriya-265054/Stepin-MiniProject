@@ -66,7 +66,7 @@ user update(info *acc,int cust_id,int check,int get)
             if(get == 8)
             {
                 float amt;
-                scanf("%.2f",&amt);
+                scanf("%f",&amt);
                 p->amt=amt;
             }
             if(get == 9)

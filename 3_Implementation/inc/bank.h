@@ -38,7 +38,7 @@ user deposit(float,info *,info *,int *);
 
 user search(info *, int , info *, int *);
 
-user withdraw(info *,info *,int *);
+user withdraw(info *,float,info *,int *);
 
 user display(info *);
 
