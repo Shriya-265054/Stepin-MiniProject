@@ -11,7 +11,13 @@
  
  - Using this application for bank related work such as deposite, withdraw etc.
  - User friendly application.
+ 
+### Benefits
 
+ - Account holder's will be able to perform transaction anytime, anywhere.
+ - Reduces paper work.
+ - Account holder's can update and add information without going to the bank.
+ 
 ## SWOT Analysis
 ![SWOT ANALYIS](https://github.com/Shriya-265054/Stepin-MiniProject/blob/main/.github/workflows/swot.PNG)
 
