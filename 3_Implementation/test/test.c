@@ -32,17 +32,6 @@ void test_newacc(void)
     TEST_ASSERT_EQUAL(123456,acc->acc_no);
     TEST_ASSERT_EQUAL(21,acc->age);
 }
-void test_search(void)
-{
-    info temp={0};
-    int cust_id=123;
-    int flag=0;
-    TEST_ASSERT_EQUAL(1,search(acc,cust_id,&temp,&flag));
-    TEST_ASSERT_EQUAL(1,flag);
-    cust_id=12;
-    TEST_ASSERT_EQUAL(0,search(acc,cust_id,&temp,&flag));
-    TEST_ASSERT_EQUAL(0,flag);
-}
 void test_add(void)
 {
     /**
@@ -63,17 +52,14 @@ void test_add(void)
 }
 void test_update(void)
 {
+    /**
+     * @brief Test case to update information
+     * 
+     */
     TEST_ASSERT_EQUAL(SUCCESS,update(acc,123,2,1));
     TEST_ASSERT_EQUAL(SUCCESS,update(acc,1234,6,1));
     TEST_ASSERT_EQUAL(SUCCESS,update(acc,123,7,1));
     TEST_ASSERT_EQUAL(SUCCESS,update(acc,123,1,1));
-}
-void test_deposit(void)
-{
-    amt=200.00;
-    int see=1;
-    info temp={0};
-    TEST_ASSERT_EQUAL(2200,deposit(amt,acc,&temp,&see));
 }
 int main(void)
 {
