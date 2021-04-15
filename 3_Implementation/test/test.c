@@ -2,7 +2,6 @@
 #include"../unity/unity.h"
 
 info *acc=NULL;
-info *temp=NULL;
 void setUp()
 {
 
@@ -71,8 +70,8 @@ void test_update(void)
 void test_deposit(void)
 {
     amt=200.00;
-    int see=123;
-    
+    int see=0;
+    int temp={0};
     TEST_ASSERT_EQUAL(200,deposit(amt,acc,&temp,&see));
 }
 int main(void)
