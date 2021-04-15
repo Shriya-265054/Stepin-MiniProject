@@ -9,7 +9,7 @@ src/search.c\
 src/update.c\
 src/withdraw.c\
 
-TEST= test_bank.c\
+TEST= test.c\
 unity/unity.c
 INC_H = inc
 INC_U = unity
@@ -26,10 +26,11 @@ all:
 	gcc -I $(INC_H) $(SRC) main.c -o $(PROJECT).$(EXEC)
 	
 
-run:
-	$(PROJECT).$(EXEC)
-test:
+run:all
+	./$(PROJECT).$(EXEC)
+test:$(SRC) $(TEST)
 	gcc -I $(INC_H) -I $(INC_U) $(TEST) $(SRC) -o $(TEST_PROJECT).$(EXEC)
+	./$(TEST_PROJECT).$(EXE)
 
 coverage:
 	cp test/test_bank.c .
@@ -46,7 +47,7 @@ coverage:
 cppcheck:
 	cppcheck --enable=all $(SRC)
 
-valgrind:
+valgrind:$(SRC)
 	valgrind ./$(PROJECT).$(EXEC)
 debug:
 	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJECT).$(EXEC)
