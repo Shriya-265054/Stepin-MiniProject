@@ -23,7 +23,7 @@ else
 endif
 
 all:
-	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJECT).$(EXEC))
+	gcc -I $(INC_H) $(SRC) main.c -o $(PROJECT).$(EXEC)
 	
 
 run:
