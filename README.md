@@ -22,14 +22,7 @@ Folder             | Description
 
 SF ID. |  Name   |    Features    | 
 -------|---------|----------------|
-265054| Shriya Prashant Naik  | All features implemented   |       
-
-## Challenges Faced and How Was It Overcome
-
-1. ABC
-2. BCD
-3. ...
-4. ...
+265054| Shriya Prashant Naik  | All features implemented   |  
 
 | Feature Id | Feature |
 | -----------|---------|
@@ -41,4 +34,14 @@ SF ID. |  Name   |    Features    |
 |F_06| Withdraw desired amount from the account |
 |F_07| Display the information using account number(if exists) |
 |F_08| Dynamic memory allocation and deallocation implemented |
+
+
+## Challenges Faced and How Was It Overcome
+
+| No. | Challenge | Solution
+|-----|-----------|--------
+|1. | Had challenges while creating workflows  |  Explore more on internet and added content accordingly
+|2. | Run time error in one of the function | Used Debugger |
+
+
 
