@@ -23,14 +23,14 @@ else
 endif
 
 all:
-	gcc -I $(INC_H) $(SRC) main.c -o $(PROJECT).$(EXEC)
+	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJECT).$(EXEC))
 	
 
-run:all
-	./$(PROJECT).$(EXEC)
-test:$(SRC) $(TEST)
-	gcc -I $(INC_H) -I $(INC_U) $(TEST) $(SRC) -o $(TEST_PROJECT).$(EXEC)
-	./$(TEST_PROJECT).$(EXE)
+run:
+	$(call FixPath,$(PROJECT).$(EXEC))
+test:
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT).$(EXEC))
+	./$(call FixPath,$(TEST_PROJECT).$(EXEC))
 
 coverage:
 	cp test/test.c .
