@@ -16,17 +16,17 @@ INC_U = unity
 
 CINC = test.c
 
-ifdef OS
+/*ifdef OS
    RM = del 
-   FixPath = $(subst /,\,$1)
+   FixPath = (subst /,\,$1)
    EXEC = exe
 else
-   ifeq ($(shell uname), Linux)
+   ifeq ((shell uname), Linux)
       RM = rm -rf
       FixPath = $1
 	  EXEC = out
    endif
-endif
+endif*/
 
 all:
 	gcc -I $(INC_H) $(SRC) main.c -o $(PROJECT).$(EXEC)
