@@ -51,8 +51,7 @@ void test_add(void)
     amt=50000.00;
     day=3;month=9;year=1999;
    TEST_ASSERT_EQUAL(SUCCESS,add(acc,name,acc_no,age,address,citizenship,phone,acc_type,amt,day,month,year));
-   TEST_ASSERT_EQUAL("pqr",acc->name);
-   TEST_ASSERT_EQUAL(45,acc->age);
+   
 }
 
 int main(void)
