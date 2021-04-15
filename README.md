@@ -40,7 +40,7 @@ SF ID. |  Name   |    Features    |
 
 | No. | Challenge | Solution
 |-----|-----------|--------
-|1. | Had challenges while creating workflows  |  Explore more on internet and added content accordingly
+|1. | Had challenges while creating workflows  |  Explored more on internet and added content accordingly
 |2. | Run time error in one of the function | Used Debugger |
 
 
