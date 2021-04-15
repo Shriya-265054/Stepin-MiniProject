@@ -24,6 +24,10 @@ int day;
 int year;
 void test_newacc(void)
 {
+    /**
+     * @brief Test case for creating new bank account.
+     * 
+     */
     acc=newacc(acc,"ABC",123456,21,"xyz","IN",85697562,"S",2000.00,4,9,2021);
     TEST_ASSERT_EQUAL(123456,acc->acc_no);
     TEST_ASSERT_EQUAL(21,acc->age);
@@ -41,6 +45,10 @@ void test_newacc(void)
 }*/
 void test_add(void)
 {
+    /**
+     * @brief Test case for adding information to the bank account.
+     * 
+     */
     acc_no = 1234 ;
     strcpy(name, "def");
     strcpy(address, "pqr");
@@ -53,13 +61,28 @@ void test_add(void)
    TEST_ASSERT_EQUAL(SUCCESS,add(acc,name,acc_no,age,address,citizenship,phone,acc_type,amt,day,month,year));
    
 }
-
+void test_update(void)
+{
+    TEST_ASSERT_EQUAL(0,update(acc,123,2,1));
+    TEST_ASSERT_EQUAL(0,update(acc,1234,6,1));
+    TEST_ASSERT_EQUAL(0,update(acc,123,7,1));
+    TEST_ASSERT_EQUAL(0,update(acc,123,1,1));
+}
+void test_deposit(void)
+{
+    amt=200.00;
+    int see=123;
+    int temp={0};
+    TEST_ASSERT_EQUAL(200.00,deposit(amt,acc,&temp,&see));
+}
 int main(void)
 {
     UNITY_BEGIN();
     RUN_TEST(test_newacc);
     RUN_TEST(test_add);
-   // RUN_TEST(test_search);
+    RUN_TEST(test_update);
+   //RUN_TEST(test_search);
+   RUN_TEST(test_deposit);
 
     return UNITY_END();
 }

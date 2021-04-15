@@ -1,5 +1,8 @@
 #include"../inc/bank.h"
-
+/**
+ * @brief Search details using account number.
+ * 
+ */
 user search(info *acc, int cust_id, info *temp, int *see)
 {
     info *p;
@@ -10,7 +13,6 @@ user search(info *acc, int cust_id, info *temp, int *see)
     }
     else
     {
-        // printf("\n%d\n",cust_id);
         int flag=0;
         while(p!=NULL)
         {
@@ -21,7 +23,6 @@ user search(info *acc, int cust_id, info *temp, int *see)
             }
             p=p->nt;
         }
-        // printf("\n flag=%d\n",flag);
         if(flag==1)
         {
             *see=1;

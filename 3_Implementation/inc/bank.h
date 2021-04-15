@@ -4,14 +4,20 @@
 #include<stdio.h>
 #include<string.h>
 #include<malloc.h>
-
+/**
+ * @brief enum user
+ * 
+ */
 typedef enum user{
     SUCCESS = 0,
-    ACC_EXISTS=1,
     NO_ACC_EXIST=2,
-    EXISTS=5
+    EXISTS=6
 }user;
 
+/**
+ * @brief Structure info
+ * 
+ */
 typedef struct info{
     char name[60];
     int acc_no;

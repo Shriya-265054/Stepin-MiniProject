@@ -1,5 +1,10 @@
 #include"../inc/bank.h"
-
+/**
+ * @brief Displays necessary information regarding the bank account by checking correct account number.
+ * 
+ * @param acc 
+ * @return user 
+ */
 user display(info *acc)
 {
     info *p;

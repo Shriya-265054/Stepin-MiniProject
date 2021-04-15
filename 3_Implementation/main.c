@@ -10,14 +10,15 @@ int main()
 {
     
     info *acc = NULL;
-    //info *temp = NULL;
-    info *cbal;
     info temp = {0};
     int see;
     int option;
-
     while(1)
 {
+    /**
+     * @brief Dashboard
+     * 
+     */
     printf("1: Create a new account.\n");
     printf("2: Add information.\n");
     printf("3: Update information\n");
@@ -45,6 +46,10 @@ int main()
 
         case 1:
         {
+            /**
+             * @brief Case1: To create new bank account.
+             * 
+             */
             printf("Enter Account number: \n");
             scanf("%d",&cust_id);
             printf("Enter your name: \n");
@@ -70,6 +75,10 @@ int main()
 
         case 2:
         {
+            /**
+             * @brief Case2: To add information to the account.
+             * 
+             */
             printf("Enter account number: \n");
             scanf("%d",&cust_id);
             printf("Enter your name: \n");
@@ -94,6 +103,10 @@ int main()
         }
         case 3:
         {
+            /**
+             * @brief Case3: Update specific information.
+             * 
+             */
             printf("Enter account number: \n");
             scanf("%d",&cust_id);
 
@@ -139,6 +152,10 @@ int main()
         }
         case 4:
         {
+            /**
+             * @brief Case4: Search information using existing account number.
+             * 
+             */
              printf("Enter account number: \n");
             scanf("%d",&cust_id);
 
@@ -162,6 +179,10 @@ int main()
         }
         case 5:
         {
+            /**
+             * @brief Case5: Deposit amount to the bank account.
+             * 
+             */
             printf("Enter account number: \n");
             scanf("%d",&cust_id);
 
@@ -171,12 +192,15 @@ int main()
                 printf("Enter the ammount you want to deposit:\n");
                 scanf("%f",&acc->amt);
                 user id = (*fp4)(amt,acc,&temp,&see);
-                //printf("Balance: %.2f\n",acc->amt);
                 break;
             }
         }
         case 6:
         {
+            /**
+             * @brief Case6: Withdraw amount from existing balance
+             * 
+             */
             printf("Enter account number: \n");
             scanf("%d",&cust_id);
             float withdrawalAmount;
@@ -187,13 +211,15 @@ int main()
                 printf("Enter the ammount you want to withdraw:\n");
                 scanf("%f",&withdrawalAmount);
                 user id = (*fp6)(acc,withdrawalAmount,acc,&see);
-                //printf("Balance: %f\n",acc->amt);
                 break;
             }
         }
         case 7:
         {
-            //printf("%d",acc->acc_no);
+            /**
+             * @brief Case7: Display specific account information
+             * 
+             */
             (*fp7)(acc);
             break;
         }
