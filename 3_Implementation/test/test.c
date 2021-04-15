@@ -2,7 +2,7 @@
 #include"../unity/unity.h"
 
 info *acc=NULL;
-
+info *temp=NULL;
 void setUp()
 {
 
@@ -63,17 +63,17 @@ void test_add(void)
 }
 void test_update(void)
 {
-    TEST_ASSERT_EQUAL(0,update(acc,123,2,1));
-    TEST_ASSERT_EQUAL(0,update(acc,1234,6,1));
-    TEST_ASSERT_EQUAL(0,update(acc,123,7,1));
-    TEST_ASSERT_EQUAL(0,update(acc,123,1,1));
+    TEST_ASSERT_EQUAL(SUCCESS,update(acc,123,2,1));
+    TEST_ASSERT_EQUAL(SUCCESS,update(acc,1234,6,1));
+    TEST_ASSERT_EQUAL(SUCCESS,update(acc,123,7,1));
+    TEST_ASSERT_EQUAL(SUCCESS,update(acc,123,1,1));
 }
 void test_deposit(void)
 {
     amt=200.00;
     int see=123;
-    int temp={0};
-    TEST_ASSERT_EQUAL(200.00,deposit(amt,acc,&temp,&see));
+    
+    TEST_ASSERT_EQUAL(200,deposit(amt,acc,&temp,&see));
 }
 int main(void)
 {
