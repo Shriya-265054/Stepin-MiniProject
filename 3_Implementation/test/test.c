@@ -40,7 +40,7 @@ void test_search(void)
     TEST_ASSERT_EQUAL(1,search(acc,cust_id,&temp,&flag));
     TEST_ASSERT_EQUAL(1,flag);
     cust_id=12;
-    TEST_ASSERT_EQUAL(1,search(acc,cust_id,&temp,&flag));
+    TEST_ASSERT_EQUAL(0,search(acc,cust_id,&temp,&flag));
     TEST_ASSERT_EQUAL(0,flag);
 }
 void test_add(void)
