@@ -9,7 +9,7 @@ src/search.c\
 src/update.c\
 src/withdraw.c\
 
-TEST= test.c\
+TEST= test/test.c\
 unity/unity.c
 INC_H = inc
 INC_U = unity
