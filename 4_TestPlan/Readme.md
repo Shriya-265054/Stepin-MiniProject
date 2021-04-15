@@ -28,9 +28,8 @@
 
 | **Test ID** | **HLT ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
 |-------------|-----|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  L_01       |H_02|During insertion check if ID is unique in INDEX.DAT file| (1). File Pointer (2). ID| SUCCESS | SUCCESS |Requirement based |
-|  L_01_02    |H_02|Id f during insertion id alrady exists, do not allow insertion|  (1). File Pointer (2). ID| ID_ALREADY_EXISTS|ID_ALREADY_EXISTS|Scenario based|
-|  L_03       |H_02,H_01,H_06,H_07|Check if file is properly opened during program execution| (1). File Name (2). File Mode (3). File Pointer|SUCCESS | SUCCESS |Technical|
-|  L_04       |H_07,H_08|if data is loaded from file during startup then writing of file should begin from the start of file |(1). File pointers (2). Head Pointer (3). Flag |SUCCESS | SUCCESS |Technical|
-|  L_05       |H_06|If there is only one node in list then deletion from beginning algorithm should work |(1). File pointers | SUCCESS | SUCCESS  |Technical|
-|  L_06       |H_06|If first node is being deleted then deletion from beginning algorithm should work |(1). File pointers | SUCCESS | SUCCESS  |Technical|
+|  L_01       |H_02|Addition of information| (1). Struct Pointer (2). Account number| SUCCESS | SUCCESS |Requirement based |
+|  L_01_02    |H_02|Account number during addition doesn't exists, do not allow addition|  (1). Struct Pointer (2). Account number| NO_ACC_EXISTS |NO_ACC_EXISTS|Scenario based|
+|  L_02       |H_03,H_04,H_05,H_06|Update, Search, Deposit, Withdraw | (1). Account number |SUCCESS | SUCCESS |Technical|
+|  L_02_02      |H_03,H_04,H_05,H_06|If account number doesn't exists then return |(1). Account number (2). Flag |NO_ACC_EXIST | NO_ACC_EXIST |Technical|
+|  L_03       |H_07|Display account information |(1). Account number | SUCCESS | SUCCESS  |Technical|
