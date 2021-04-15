@@ -34,7 +34,7 @@ void test_search(void)
     int cust_id=123;
     int see=0;
     TEST_ASSERT_EQUAL(SUCCESS,search(acc,cust_id,&temp,&see));
-    TEST_ASSERT_EQUAL(0,see);
+    TEST_ASSERT_EQUAL(1,see);
     cust_id=12;
     search(acc,cust_id,&temp,&see);
     TEST_ASSERT_EQUAL(1,see);
