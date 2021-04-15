@@ -37,7 +37,6 @@ void test_add(void)
 int main(void)
 {
     UNITY_BEGIN();
-
     RUN_TEST(test_newacc);
     RUN_TEST(test_add);
     RUN_TEST(test_search);
