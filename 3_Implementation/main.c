@@ -224,7 +224,7 @@ int main()
             (*fp7)(acc);
             break;
         }
-        default:printf("Invalid option.\n");
+        default:printf("Application closed.\n");
                 return 0;
                 break;
     }
