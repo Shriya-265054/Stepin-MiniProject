@@ -6,9 +6,13 @@
 ![Bank Mngmt System](https://github.com/Shriya-265054/Stepin-MiniProject/blob/main/.github/workflows/bank.png)
 
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
-[![C/C++ CI - Build Status](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml) |[![cppcheck-action](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml) [![CI-Coverage](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/coverage.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/coverage.yml)[![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/21c5cae1b5844158b9eb3d4c80125c89)](https://app.codacy.com/gh/Shriya-265054/Stepin-MiniProject/dashboard)| [![Unit Testing - Unity](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml) |[![Contribution Check - Git Inspector](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml)
+Build--> [![C/C++ CI - Build Status](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml) 
+Cppcheck--> [![cppcheck-action](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml) 
+Code Coverage--> [![CI-Coverage](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/coverage.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/coverage.yml)
+Dynamic Analysis--> [![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml) 
+Codacy--> [![Codacy Badge](https://app.codacy.com/project/badge/Grade/21c5cae1b5844158b9eb3d4c80125c89)](https://app.codacy.com/gh/Shriya-265054/Stepin-MiniProject/dashboard)
+Unit Testing--> [![Unit Testing - Unity](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml) 
+Git Inspector--> [![Contribution Check - Git Inspector](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml)
 
 
 ## Folder Structure
