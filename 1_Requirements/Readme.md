@@ -21,7 +21,7 @@
 ## Features and Ageing 
 | Age | Feature |
 | ----- | ----- | 
-| 1770 to 1969  |  The Early Phase(Pre-Independence):During the Pre Independence period over 600 banks had been registered in the country, but only a few managed to survive.  | 
+| 1770 to 1969  |  The Early Phase: During the Pre Independence period over 600 banks had been registered in the country, but only a few managed to survive.  | 
 | 1969 to 1991 | The Nationalisation Phase: This post Independence phase was the one that led to major developments in the banking sector of India and also in the evolution of the banking sector. | 
 | 1991 - till date | The Liberalisation Phase: Regular monitoring and regulations need to be followed to continue the profits provided by the banking sector.| 
 
