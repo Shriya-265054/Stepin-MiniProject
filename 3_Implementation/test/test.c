@@ -32,17 +32,17 @@ void test_newacc(void)
     TEST_ASSERT_EQUAL(123456,acc->acc_no);
     TEST_ASSERT_EQUAL(21,acc->age);
 }
-/*void test_search(void)
+void test_search(void)
 {
     info temp={0};
     int cust_id=123;
-    int see=0;
-    TEST_ASSERT_EQUAL(SUCCESS,search(acc,cust_id,&temp,&see));
-    TEST_ASSERT_EQUAL(0,see);
+    int flag=0;
+    TEST_ASSERT_EQUAL(SUCCESS,search(acc,cust_id,&temp,&flag));
+    TEST_ASSERT_EQUAL(1,flag);
     cust_id=12;
-    search(acc,cust_id,&temp,&see);
-    TEST_ASSERT_EQUAL(1,see);
-}*/
+    search(acc,cust_id,&temp,&flag);
+    TEST_ASSERT_EQUAL(0,flag);
+}
 void test_add(void)
 {
     /**
@@ -72,6 +72,7 @@ void test_deposit(void)
 {
     amt=200.00;
     int see=0;
+    info temp={0};
     TEST_ASSERT_EQUAL(200,deposit(amt,acc,&temp,&see));
 }
 int main(void)
@@ -80,8 +81,8 @@ int main(void)
     RUN_TEST(test_newacc);
     RUN_TEST(test_add);
     RUN_TEST(test_update);
-   //RUN_TEST(test_search);
-   RUN_TEST(test_deposit);
+    RUN_TEST(test_search);
+    RUN_TEST(test_deposit);
 
     return UNITY_END();
 }
