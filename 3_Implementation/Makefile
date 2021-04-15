@@ -14,6 +14,8 @@ unity/unity.c
 INC_H = inc
 INC_U = unity
 
+CINC = test.c
+
 ifdef OS
    RM = del 
    FixPath = $(subst /,\,$1)
@@ -40,7 +42,7 @@ coverage:
 	cp test/test.c .
 	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJECT).$(EXEC))
 	$(call FixPath, ./$(TEST_PROJECT).$(EXEC))
-	gcov -a $(COV_SRC)
+	gcov -a $(CINC)
 	$(RM) *.$(EXEC)
 	$(RM) *.gcda
 	$(RM) *.gcno
