@@ -1,4 +1,4 @@
-#include"bank.h"
+#include"../inc/bank.h"
 
 user add(info *acc,char *name,int cust_id, int age,char *address,char *citizenship,int phone,char *acc_type,float amt,int month,int day,int year)
 {

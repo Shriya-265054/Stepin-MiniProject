@@ -1,4 +1,4 @@
-#include"bank.h"
+#include"../inc/bank.h"
 user withdraw(info *acc,float withdrawalAmount,info *temp,int *see)
 {
     int i=search (acc,i,temp,see);

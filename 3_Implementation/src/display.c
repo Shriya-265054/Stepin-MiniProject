@@ -1,4 +1,4 @@
-#include"bank.h"
+#include"../inc/bank.h"
 
 user display(info *acc)
 {

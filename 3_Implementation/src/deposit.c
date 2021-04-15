@@ -1,6 +1,4 @@
-#include "bank.h"
-
-#include"bank.h"
+#include"../inc/bank.h"
 
 user deposit(float amt,info *acc,info *temp,int *see)
 {

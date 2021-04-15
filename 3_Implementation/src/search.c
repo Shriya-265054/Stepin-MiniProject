@@ -1,4 +1,4 @@
-#include"bank.h"
+#include"../inc/bank.h"
 
 user search(info *acc, int cust_id, info *temp, int *see)
 {

@@ -1,4 +1,4 @@
-#include"bank.h"
+#include"../inc/bank.h"
 #include"unity.h"
 
 info *acc=NULL;

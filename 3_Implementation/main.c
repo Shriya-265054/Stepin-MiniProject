@@ -1,5 +1,4 @@
-#include"bank.h"
-#include"bank.h"
+#include "./inc/bank.h"
 info *(* fp1)(info *,char *,int,int,char *,char *,int,char *,float,int,int,int)=newacc;
 user (*fp2)(info *,char *,int ,int ,char *,char *,int ,char *,float ,int ,int ,int )=add;
 user (*fp3)(info *,int,int,int)=update;

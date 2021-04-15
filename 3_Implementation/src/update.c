@@ -1,4 +1,4 @@
-#include "bank.h"
+#include "../inc/bank.h"
 
 user update(info *acc,int cust_id,int check,int get)
 {
