@@ -67,8 +67,6 @@ int main(void)
     RUN_TEST(test_newacc);
     RUN_TEST(test_add);
     RUN_TEST(test_update);
-    RUN_TEST(test_search);
-    RUN_TEST(test_deposit);
 
     return UNITY_END();
 }
