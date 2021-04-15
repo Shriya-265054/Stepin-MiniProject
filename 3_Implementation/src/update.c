@@ -89,6 +89,7 @@ user update(info *acc,int cust_id,int check,int get)
             
            
         }
+        return SUCCESS;
     }
 }
 
