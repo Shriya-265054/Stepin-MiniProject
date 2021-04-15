@@ -4,7 +4,7 @@
 
 # SDLC Activity Based Learning
 
-Visit [Pages for Report -optional](using github.io option)
+![Bank Mngmt System](https://github.com/Shriya-265054/Stepin-MiniProject/blob/main/.github/workflows/bank.png)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
