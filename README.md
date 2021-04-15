@@ -8,7 +8,7 @@ Visit [Pages for Report -optional](using github.io option)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
-[![C/C++ CI-Build Status](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/c-build.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/c-build.yml) |[![cppcheck-action](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml) [![CI-Coverage](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gcov.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/coverage.yml)[![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/21c5cae1b5844158b9eb3d4c80125c89)](https://app.codacy.com/gh/Shriya-265054/Stepin-MiniProject/dashboard)| [![Unity - Unit Testing](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml)|[![Contribution Check - Git Inspector](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml)
+[![C/C++ CI - Build Status](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml) |[![cppcheck-action](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml) [![CI-Coverage](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gcov.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/coverage.yml)[![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/21c5cae1b5844158b9eb3d4c80125c89)](https://app.codacy.com/gh/Shriya-265054/Stepin-MiniProject/dashboard)| [![Unit Testing - Unity](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml) |[![Contribution Check - Git Inspector](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml)
 
 
 ## Folder Structure
@@ -21,9 +21,9 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-SF ID. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
-265054| Shriya Prashant Naik  | Feature A, B etc    | X No     | X No   |X No   |X No       
+SF ID. |  Name   |    Features    | 
+-------|---------|----------------|
+265054| Shriya Prashant Naik  | All features implemented   |       
 
 ## Challenges Faced and How Was It Overcome
 
