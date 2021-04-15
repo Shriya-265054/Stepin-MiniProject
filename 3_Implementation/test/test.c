@@ -13,7 +13,7 @@ void tearDown()
 }
 void test_newacc(void)
 {
-    acc=newacc(acc,'ABC',123456,21,'xyz','IN',85697562,'S',2000.00,4,9,2021);
+    acc=newacc(acc,"ABC",123456,21,"xyz","IN",85697562,"S",2000.00,4,9,2021);
     TEST_ASSERT_EQUAL(123456,acc->acc_no);
     TEST_ASSERT_EQUAL(21,acc->age);
 }
