@@ -32,12 +32,12 @@ void test_search(void)
 {
     info temp={0};
     int cust_id=123;
-    int see=0;
+    int *see=0;
     TEST_ASSERT_EQUAL(SUCCESS,search(acc,cust_id,&temp,&see));
-    TEST_ASSERT_EQUAL(1,see);
+    TEST_ASSERT_EQUAL(1,*see);
     cust_id=12;
     search(acc,cust_id,&temp,&see);
-    TEST_ASSERT_EQUAL(1,see);
+    TEST_ASSERT_EQUAL(0,*see);
 }
 void test_add(void)
 {
