@@ -37,10 +37,10 @@ void test_search(void)
     info temp={0};
     int cust_id=123;
     int flag=0;
-    TEST_ASSERT_EQUAL(SUCCESS,search(acc,cust_id,&temp,&flag));
+    TEST_ASSERT_EQUAL(1,search(acc,cust_id,&temp,&flag));
     TEST_ASSERT_EQUAL(1,flag);
     cust_id=12;
-    TEST_ASSERT_EQUAL(SUCCESS,search(acc,cust_id,&temp,&flag));
+    TEST_ASSERT_EQUAL(1,search(acc,cust_id,&temp,&flag));
     TEST_ASSERT_EQUAL(0,flag);
 }
 void test_add(void)
