@@ -35,12 +35,12 @@ all:
 run:
 	$(call FixPath,$(PROJECT).$(EXEC))
 test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT).$(EXEC))
+	gcc -I $(INC_H) -I $(INC_U) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT).$(EXEC))
 	./$(call FixPath,$(TEST_PROJECT).$(EXEC))
 
 coverage:
 	cp test/test.c .
-	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJECT).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_U) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJECT).$(EXEC))
 	$(call FixPath, ./$(TEST_PROJECT).$(EXEC))
 	gcov -a $(CINC)
 	$(RM) *.$(EXEC)
