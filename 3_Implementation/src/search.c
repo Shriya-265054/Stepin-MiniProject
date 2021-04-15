@@ -43,6 +43,6 @@ user search(info *acc, int cust_id, info *temp, int *see)
         {
             *see=0;
         }
-        return SUCCESS;
+        return 1;
     }
 }
