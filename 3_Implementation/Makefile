@@ -16,7 +16,7 @@ INC_U = unity
 
 CINC = test.c
 
-/*ifdef OS
+ifdef OS
    RM = del 
    FixPath = $(subst /,\,$1)
       EXEC = exe
@@ -26,23 +26,23 @@ else
       FixPath = $1
 	     EXEC = out
    endif
-endif*/
+endif
 all:
-	gcc -I $(INC_H) $(SRC) main.c -o $(PROJECT).out
+	gcc -I $(INC_H) $(SRC) main.c -o $(PROJECT).$(EXEC)
 	
 
 run:
-	$(call FixPath,$(PROJECT).out)
+	$(call FixPath,$(PROJECT).$(EXEC))
 test:
-	gcc -I $(INC_H) -I $(INC_U) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT).out)
-	./$(call FixPath,$(TEST_PROJECT).out)
+	gcc -I $(INC_H) -I $(INC_U) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT).$(EXEC))
+	./$(call FixPath,$(TEST_PROJECT).$(EXEC))
 
 coverage:
 	cp test/test.c .
-	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_U) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJECT).out)
-	$(call FixPath, ./$(TEST_PROJECT).out)
+	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_U) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJECT).$(EXEC))
+	$(call FixPath, ./$(TEST_PROJECT).$(EXEC))
 	gcov -a $(CINC)
-	$(RM) *.out
+	$(RM) *.$(EXEC)
 	$(RM) *.gcda
 	$(RM) *.gcno
 	$(RM) *.c.gcov
@@ -53,11 +53,11 @@ cppcheck:
 	cppcheck --enable=all $(SRC)
 
 valgrind:$(SRC)
-	valgrind ./$(TEST_PROJECT).out
+	valgrind ./$(PROJECT).$(EXEC)
 debug:
-	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJECT).out
-	gdb $(PROJECT).out
+	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJECT).$(EXEC)
+	gdb $(PROJECT).$(EXEC)
 
 clean:
 	del *.DAT
-	del *.out
+	del *.$(EXEC)
