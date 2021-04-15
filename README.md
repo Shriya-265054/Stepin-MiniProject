@@ -33,7 +33,6 @@ SF ID. |  Name   |    Features    |
 |F_05| Desposit desired amount in the account |
 |F_06| Withdraw desired amount from the account |
 |F_07| Display the information using account number(if exists) |
-|F_08| Dynamic memory allocation and deallocation implemented |
 
 
 ## Challenges Faced and How Was It Overcome
