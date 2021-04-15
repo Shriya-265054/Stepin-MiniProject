@@ -28,7 +28,7 @@
 
 
 ### References 
- - This work is taken from [http://www.cprogrammingnotes.com/question/banking-system.html](http://www.cprogrammingnotes.com/question/banking-system.html) and this is an improvement on it.
+ - This work is with reference to [http://www.cprogrammingnotes.com/question/banking-system.html](http://www.cprogrammingnotes.com/question/banking-system.html) and this is an improvement on it.
 
 ## SWOT Analysis
 ![SWOT ANALYIS](https://github.com/Shriya-265054/Stepin-MiniProject/blob/main/.github/workflows/swot.PNG)
