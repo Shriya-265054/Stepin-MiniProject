@@ -11,7 +11,7 @@ void tearDown()
 {
 
 }
-
+int acc_no;
 char name[60];
 int age;
 char address[100];
