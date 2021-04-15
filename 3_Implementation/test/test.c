@@ -73,7 +73,7 @@ void test_deposit(void)
     amt=200.00;
     int see=0;
     info temp={0};
-    TEST_ASSERT_EQUAL(2200.00,deposit(amt,acc,&temp,&see));
+    TEST_ASSERT_EQUAL(2200,deposit(amt,acc,&temp,&see));
 }
 int main(void)
 {
