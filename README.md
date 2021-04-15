@@ -21,9 +21,9 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-SF ID. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
-265054| Shriya Prashant Naik  | Feature A, B etc    | X No     | X No   |X No   |X No       
+SF ID. |  Name   |    Features    | 
+-------|---------|----------------|
+265054| Shriya Prashant Naik  | All features implemented   |       
 
 ## Challenges Faced and How Was It Overcome
 
