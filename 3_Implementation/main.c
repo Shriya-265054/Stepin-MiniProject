@@ -192,6 +192,7 @@ int main()
                 printf("Enter the ammount you want to deposit:\n");
                 scanf("%f",&acc->amt);
                 user id = (*fp4)(amt,acc,&temp,&see);
+                printf("Balance: %.2f\n",acc->amt);
                 break;
             }
         }

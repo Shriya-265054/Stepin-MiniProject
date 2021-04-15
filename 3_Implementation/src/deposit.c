@@ -22,7 +22,7 @@ user deposit(float amt,info *acc,info *temp,int *see)
          * 
          */
         acc->amt+=temp->amt;
-        printf("Balance: %.2f\n",acc->amt);
+        //printf("Balance: %.2f\n",acc->amt);
        
     }
 }
