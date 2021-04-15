@@ -30,7 +30,7 @@ void test_search(void)
 }
 void test_add(void)
 {
-   TEST_ASSERT_EQUAL(SUCCESS,add(acc,"pqr",1234,45,"def","NYC",256864634,"C",50000.00,3,9,1999));
+   user=add(acc,"pqr",1234,45,"def","NYC",256864634,"C",50000.00,3,9,1999);
    TEST_ASSERT_EQUAL("pqr",acc->name);
 }
 
