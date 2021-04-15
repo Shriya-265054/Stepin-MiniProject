@@ -24,10 +24,9 @@ else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
       FixPath = $1
-	  EXEC = out
+	  	  EXEC = out
    endif
 endif
-
 all:
 	gcc -I $(INC_H) $(SRC) main.c -o $(PROJECT).$(EXEC)
 	
