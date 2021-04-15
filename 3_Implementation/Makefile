@@ -19,7 +19,7 @@ CINC = test.c
 ifdef OS
    RM = del 
    FixPath = $(subst /,\,$1)
-   EXEC = exe
+      EXEC = exe
 else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
