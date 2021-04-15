@@ -15,9 +15,13 @@ INC_H = inc
 INC_U = unity
 
 ifdef OS
+   RM = del 
+   FixPath = $(subst /,\,$1)
    EXEC = exe
 else
    ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
 	  EXEC = out
    endif
 endif
