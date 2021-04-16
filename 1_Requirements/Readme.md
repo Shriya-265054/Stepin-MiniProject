@@ -2,7 +2,7 @@
 
 ## Introduction
 
- - Bank Management System is a application, the project focuses on customer's account services in a bank. This application has several services such as accepting information for record, to deposit and withdraw an amount, searching the information in the record, interests and displaying the balance on the screen also the data is secured using login credentials etc. This project is made using structures and functions in c programming language.
+ - Bank Management System is a application, the project focuses on customer's account services in a bank. This application has several services such as accepting information for record, to deposit and withdraw an amount, searching the information in the record and displaying the balance on the screen. This project is made using structures, function pointers and functions in c programming language.
  - As we know that because of this pandemic situation people are suggested to stay indoors as a result for people to make transactions without going to the bank makes it super easy by using this application.
  - For this project, we require C Programming, makefile and Unit Testing using Unity.
  - Basic knowledge of structures and functions would be helpful to understand.
@@ -18,8 +18,17 @@
  - Reduces paper work.
  - Account holder's can update and add information without going to the bank.
 
+## Features and Ageing 
+| Age | Feature |
+| ----- | ----- | 
+| 1770 to 1969  |  The Early Phase: During the Pre Independence period over 600 banks had been registered in the country, but only a few managed to survive.  | 
+| 1969 to 1991 | The Nationalisation Phase: This post Independence phase was the one that led to major developments in the banking sector of India and also in the evolution of the banking sector. | 
+| 1991 - till date | The Liberalisation Phase: Regular monitoring and regulations need to be followed to continue the profits provided by the banking sector.| 
+
+
+
 ### References 
- -- This work is taken from [http://www.cprogrammingnotes.com/question/banking-system.html](http://www.cprogrammingnotes.com/question/banking-system.html) and this is an improvement on it.
+ - This work is with reference to [http://www.cprogrammingnotes.com/question/banking-system.html](http://www.cprogrammingnotes.com/question/banking-system.html) and this is an improvement on it.
 
 ## SWOT Analysis
 ![SWOT ANALYIS](https://github.com/Shriya-265054/Stepin-MiniProject/blob/main/.github/workflows/swot.PNG)
@@ -28,7 +37,7 @@
 ## Who:  
 This application can be used by people having a valid bank account.
 ## What:
-Bank Management System is a application, the project focuses on customer's account services in a bank. This application has several services such as accepting information for record, to deposit and withdraw an amount, searching the information in the record, interests and displaying the balance on the screen also the data is secured using login credentials etc. This project is made using structures and functions in c programming language.
+Bank Management System is a application, the project focuses on customer's account services in a bank. This application has several services such as accepting information for record, to deposit and withdraw an amount, searching the information in the record and displaying the balance on the screen. This project is made using structures, function pointers and functions in c programming language.
 ## When:
 The application is made as a part of LTTS Step-in Mini Project work.
 ## Where:

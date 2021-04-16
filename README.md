@@ -7,7 +7,7 @@
 
 Build | Code Quality | Unity | Git Inspector
 ------|----------|-------|--------------
-[![C/C++ CI](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml) | [![Static Cppcheck](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml) [![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/dynamic_valgrind.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/dynamic_valgrind.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/21c5cae1b5844158b9eb3d4c80125c89)](https://app.codacy.com/gh/Shriya-265054/Stepin-MiniProject/dashboard)| [![Unity - Unit Testing](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml)
+[![C/C++ CI](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cbuild.yml) | [![Static Cppcheck](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/cppcheck.yml) [![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/dynamic_valgrind.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/dynamic_valgrind.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/507820cf54d54c0eb1875a4d80741513)](https://app.codacy.com/gh/Shriya-265054/Stepin-MiniProject/dashboard)| [![Unity - Unit Testing](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Shriya-265054/Stepin-MiniProject/actions/workflows/gitinspector.yml)
 
 
 ## Folder Structure
@@ -33,7 +33,6 @@ SF ID. |  Name   |    Features    |
 |F_05| Desposit desired amount in the account |
 |F_06| Withdraw desired amount from the account |
 |F_07| Display the information using account number(if exists) |
-|F_08| Dynamic memory allocation and deallocation implemented |
 
 
 ## Challenges Faced and How Was It Overcome
