@@ -98,7 +98,7 @@ int main()
             scanf("%10s",acc_type);
             printf("Enter you birth date: \n");
             scanf("%d %d %d",&day,&month,&year);
-
+            printf("****Information added successfully****");
             user id = (*fp2)(acc,name,cust_id,age,address,citizenship,phone,acc_type,amt,month,day,year);
             break;
         }
@@ -170,6 +170,7 @@ int main()
                 printf("Citizenship: %s\n",temp.citizenship);
                 printf("Phone number: %d\n",temp.phone);
                 printf("Account type: %s\n",temp.acc_type);
+                printf("*****ACCOUNT FOUND****");
                 break;
             }
             else
@@ -194,6 +195,7 @@ int main()
                 scanf("%f",&acc->amt);
                 user id = (*fp4)(amt,acc,&temp,&see);
                 printf("Balance: %.2f\n",acc->amt);
+                printf("****Money Deposited Successfully*****");
                 break;
             }
         }
@@ -213,6 +215,7 @@ int main()
                 printf("Enter the ammount you want to withdraw:\n");
                 scanf("%f",&withdrawalAmount);
                 user id = (*fp6)(acc,withdrawalAmount,acc,&see);
+                printf("****Money Withdrawn Successfully****");
                 break;
             }
         }
