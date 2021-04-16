@@ -19,7 +19,7 @@ int main()
      * @brief Dashboard
      * 
      */
-    printf("*****Bank Management System*****");
+    printf("*****Bank Management System*****\n");
     printf("1: Create a new account.\n");
     printf("2: Add information.\n");
     printf("3: Update information\n");
